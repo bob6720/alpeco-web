@@ -14,8 +14,9 @@
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <div class="eyebrow">What we offer</div>
-            <h2>Targeted help for unwanted pests.</h2>
+            <div class="eyebrow">Start here</div>
+            <h2>Commercial or residential?</h2>
+            <p>Choose the type of property first. Both options include all of our pest services.</p>
         </div>
         @include('pest-selector')
     </div>

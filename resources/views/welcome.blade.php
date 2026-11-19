@@ -11,7 +11,7 @@
         <p>Call for a free phone quote and practical help from ALPECO.</p>
         <div class="hero-actions">
             <a class="button button-red" href="tel:+6479854198">Call 07 985 4198</a>
-            <a class="button button-outline" href="{{ route('services') }}">See Pest Services</a>
+            <a class="button button-outline" href="#service-selector">Choose Your Service</a>
         </div>
     </div>
 </section>
@@ -24,12 +24,12 @@
     </div>
 </div>
 
-<section class="section">
+<section class="section" id="service-selector">
     <div class="container">
         <div class="section-head">
-            <div class="eyebrow">What we cover</div>
-            <h2>Common pests. Practical solutions.</h2>
-            <p>Speak with ALPECO about the pest problem you are dealing with.</p>
+            <div class="eyebrow">Start here</div>
+            <h2>Commercial or residential?</h2>
+            <p>Choose the type of property first. Both options include all of our pest services.</p>
         </div>
         @include('pest-selector')
     </div>
