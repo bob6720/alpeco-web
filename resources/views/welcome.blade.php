@@ -7,7 +7,7 @@
     <img class="hero-image" src="{{ asset('images/Colorful_bug_Banner.jpg') }}" alt="" fetchpriority="high">
     <div class="container hero-content">
         <div class="eyebrow">Alternative Pest Control</div>
-        <h1>Pest problems? <br><span>We can help.</span></br></h1>
+        <h1>Pest problems? <span>We can help.</span></h1>
         <p>Call for a free phone quote and practical help from ALPECO.</p>
         <div class="hero-actions">
             <a class="button button-red" href="tel:+6479854198">Call 07 985 4198</a>
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="stat"><strong>Free</strong><span>Phone quote</span></div>
         <div class="stat"><strong>9</strong><span>Pest types covered</span></div>
-        <div class="stat"><strong>One call</strong><span>Practical pest control</span></div>
+        <div class="stat"><strong>Trained team</strong><span>Registered technicians</span></div>
     </div>
 </div>
 
@@ -31,22 +31,7 @@
             <h2>Common pests. Practical solutions.</h2>
             <p>Speak with ALPECO about the pest problem you are dealing with.</p>
         </div>
-        <div class="pest-grid">
-            @foreach ([
-                ['Ants', 'ant.png'], ['Bed Bugs', 'bedbug.png'], ['Birds', 'bird.png'],
-                ['Borer', 'borer.png'], ['Cockroaches', 'cockroach.png'], ['Fleas', 'flea.png'],
-                ['Flies', 'fly.png'], ['Rats & Mice', 'rat.png'], ['Spiders', 'spider.png'],
-            ] as [$name, $icon])
-                <article class="pest-card">
-                    @if ($icon)
-                        <img src="{{ asset('images/icons/'.$icon) }}" alt="" loading="lazy">
-                    @else
-                        <span class="pest-letter">{{ substr($name, 0, 1) }}</span>
-                    @endif
-                    <h3>{{ $name }}</h3>
-                </article>
-            @endforeach
-        </div>
+        @include('pest-selector')
     </div>
 </section>
 
@@ -56,11 +41,11 @@
         <div class="split-copy">
             <div class="eyebrow">Why call ALPECO</div>
             <h2>Straightforward advice. Local pest control.</h2>
-            <p>Tell us what you are seeing and get clear next-step help from Alternative Pest Control.</p>
+            <p>We provide traditional and non-toxic pest-control options for homes and businesses. Tell us what you are seeing and get clear next-step advice.</p>
             <div class="check-list">
                 <span>Free phone quote</span>
-                <span>Practical, focused service</span>
-                <span>Help for homes and businesses</span>
+                <span>Domestic and commercial service</span>
+                <span>Trained, registered technicians</span>
             </div>
             <a class="button button-dark" href="tel:+6479854198">Call 07 985 4198</a>
         </div>

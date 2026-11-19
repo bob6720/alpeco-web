@@ -16,8 +16,8 @@
         <div class="split-copy">
             <div class="eyebrow">Who we are</div>
             <h2>Plain advice and practical next steps.</h2>
-            <p>ALPECO Alternative Pest Control helps you identify the issue and choose an appropriate solution.</p>
-            <p>From ants and bed bugs to rats, mice and spiders, we keep the process straightforward and focused on your pest problem.</p>
+            <p>ALPECO provides domestic and commercial pest control, backed by trained, registered technicians.</p>
+            <p>We offer traditional and non-toxic options. Tell us what is happening and we’ll explain practical next steps for your property.</p>
         </div>
         <div class="van-panel">
             <img src="{{ asset('images/Drawn_Company_Car.png') }}" alt="Alpeco pest control service vehicle">

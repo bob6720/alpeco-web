@@ -28,6 +28,8 @@ test('the home page shows the pest control name and phone number', function () {
         ->assertSee('Bed Bugs')
         ->assertSee('images/icons/bird.png')
         ->assertSee('images/icons/borer.png')
+        ->assertSee('data-pest="bed-bugs"', false)
+        ->assertSee('How long it takes')
         ->assertSee('mite.ico')
         ->assertSee('Rats &amp; Mice', false);
 });

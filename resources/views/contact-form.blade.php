@@ -6,22 +6,22 @@
     <div class="form-grid">
         <div class="field">
             <label for="name">Name *</label>
-            <input id="name" name="name" type="text" value="{{ old('name') }}" autocomplete="name" maxlength="100" required>
+            <input id="name" name="name" type="text" value="{{ old('name') }}" placeholder="Full Name or Company Name" autocomplete="name" maxlength="100" required>
             @error('name')<p class="field-error">{{ $message }}</p>@enderror
         </div>
         <div class="field">
             <label for="email">Email *</label>
-            <input id="email" name="email" type="email" value="{{ old('email') }}" autocomplete="email" maxlength="150" required>
+            <input id="email" name="email" type="email" value="{{ old('email') }}" placeholder="Your email" autocomplete="email" maxlength="150" required>
             @error('email')<p class="field-error">{{ $message }}</p>@enderror
         </div>
         <div class="field">
             <label for="phone">Phone *</label>
-            <input id="phone" name="phone" type="tel" value="{{ old('phone') }}" autocomplete="tel" maxlength="50" required>
+            <input id="phone" name="phone" type="tel" value="{{ old('phone') }}" placeholder="Your phone number" autocomplete="tel" maxlength="50" required>
             @error('phone')<p class="field-error">{{ $message }}</p>@enderror
         </div>
         <div class="field">
             <label for="site">Site Address *</label>
-            <input id="site" name="site" type="text" value="{{ old('site') }}" placeholder="Site address, pest, spraying, or other service" maxlength="255" required>
+            <input id="site" name="site" type="text" value="{{ old('site') }}" placeholder="Site address" maxlength="255" required>
             @error('site')<p class="field-error">{{ $message }}</p>@enderror
         </div>
         <div class="field full">
